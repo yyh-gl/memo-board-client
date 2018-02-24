@@ -100,7 +100,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="sendRequstButton:" destination="iFn-3z-U0P" eventType="touchUpInside" id="Otl-Dr-ikh"/>
+                                    <action selector="pushContentOneButton:" destination="iFn-3z-U0P" eventType="touchUpInside" id="lvP-em-kRH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plX-lg-17T" userLabel="FixedContent2">
@@ -109,6 +109,9 @@
                                 <state key="normal" title="   Open for Studentsの時間ではありません。" backgroundImage="working">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="pushContentTwoButton:" destination="iFn-3z-U0P" eventType="touchUpInside" id="21k-aQ-Vbg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZQ-NW-Xao" userLabel="FixedContent3">
                                 <rect key="frame" x="0.0" y="243" width="375" height="116.5"/>
@@ -117,7 +120,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="sendRequstButton:" destination="iFn-3z-U0P" eventType="touchUpInside" id="gHL-kU-EaL"/>
+                                    <action selector="pushContentThreeButton:" destination="iFn-3z-U0P" eventType="touchUpInside" id="Wrj-tC-6hX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fe2-90-QpR" userLabel="FixedContent4">
@@ -127,7 +130,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="sendRequstButton:" destination="iFn-3z-U0P" eventType="touchUpInside" id="opD-lC-ccQ"/>
+                                    <action selector="pushContentFourButton:" destination="iFn-3z-U0P" eventType="touchUpInside" id="bGj-oH-06L"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7m-ZA-Whh" userLabel="FixedContent5">
@@ -137,7 +140,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="sendRequstButton:" destination="iFn-3z-U0P" eventType="touchUpInside" id="jBw-b3-GCB"/>
+                                    <action selector="pushContentFiveButton:" destination="iFn-3z-U0P" eventType="touchUpInside" id="ke9-1S-gxs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBS-JJ-bio">

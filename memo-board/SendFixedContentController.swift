@@ -17,13 +17,29 @@ class SendFixedContentController: UIViewController {
     @IBOutlet weak var contentFourButton: UIButton!
     @IBOutlet weak var contentFiveButton: UIButton!
     
-    func getMemo() {
-        let url = "http://192.168.10.4:3000/memos/1"
+    func getMemo(id: Int) {
+        let url = "http://192.168.10.4:3000/memos/\(id)"
         Alamofire.request(url, method:.get)
     }
     
-    @IBAction func sendRequstButton(_ sender: Any) {
-        getMemo()
+    @IBAction func pushContentOneButton(_ sender: Any) {
+        getMemo(id: 1)
+    }
+    
+    @IBAction func pushContentTwoButton(_ sender: Any) {
+        getMemo(id: 2)
+    }
+    
+    @IBAction func pushContentThreeButton(_ sender: Any) {
+        getMemo(id: 3)
+    }
+    
+    @IBAction func pushContentFourButton(_ sender: Any) {
+        getMemo(id: 4)
+    }
+    
+    @IBAction func pushContentFiveButton(_ sender: Any) {
+        getMemo(id: 5)
     }
     
     override func viewDidLoad() {
