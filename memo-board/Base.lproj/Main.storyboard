@@ -14,7 +14,7 @@
         <!--Main-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="memo_board" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Main" id="BYZ-38-t0r" customClass="MainController" customModule="memo_board" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,6 +32,9 @@
                                         <state key="normal" title="定型文" backgroundImage="comment">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="goFixedContentView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xCI-vF-1Av"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GP9-Em-TAq" userLabel="新規文">
                                         <rect key="frame" x="0.0" y="323.5" width="375" height="323.5"/>
@@ -39,6 +42,9 @@
                                         <state key="normal" title="新規文" backgroundImage="pencil">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="goNewContentView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bgr-CT-xWg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.10100343220000001" green="0.61768638009999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -78,30 +84,62 @@
         <!--Fixed_phrase-->
         <scene sceneID="Bac-bC-zSJ">
             <objects>
-                <viewController title="Fixed_phrase" id="iFn-3z-U0P" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FixedContentView" title="Fixed_phrase" id="iFn-3z-U0P" customClass="SendFixedContentController" customModule="memo_board" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xjv-Mu-zX5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDR-kD-DHD">
+                                <rect key="frame" x="172" y="121" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plX-lg-17T">
+                                <rect key="frame" x="172" y="167" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="2"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBS-JJ-bio">
+                                <rect key="frame" x="168" y="270" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BACK"/>
+                                <connections>
+                                    <segue destination="0r4-eR-cfQ" kind="unwind" unwindAction="goBack:" id="LS0-eq-Zl0"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="4pA-WK-qqN"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1BF-6q-aa3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="0r4-eR-cfQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1065" y="-204"/>
         </scene>
         <!--New_phrase-->
         <scene sceneID="dcy-Gv-8pL">
             <objects>
-                <viewController title="New_phrase" id="uif-fM-PaN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewContentView" title="New_phrase" id="uif-fM-PaN" customClass="SendNewContentController" customModule="memo_board" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Phi-PK-JqV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezC-Pj-vWA">
+                                <rect key="frame" x="167" y="382" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BACK"/>
+                                <connections>
+                                    <segue destination="k6p-s0-zaC" kind="unwind" unwindAction="goBack:" id="uuM-9s-5Uj"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="uHt-o7-v1q"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8FR-5K-lc3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="k6p-s0-zaC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1066" y="529"/>
         </scene>

@@ -1,0 +1,6 @@
+framework module Pods_memo_board {
+  umbrella header "Pods-memo-board-umbrella.h"
+
+  export *
+  module * { export * }
+}
