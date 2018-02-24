@@ -11,6 +11,12 @@ import Alamofire
 
 class SendFixedContentController: UIViewController {
     
+    @IBOutlet weak var contentOneButton: UIButton!
+    @IBOutlet weak var contentTwoButton: UIButton!
+    @IBOutlet weak var contentThreeButton: UIButton!
+    @IBOutlet weak var contentFourButton: UIButton!
+    @IBOutlet weak var contentFiveButton: UIButton!
+    
     func getMemo() {
         let url = "http://192.168.10.4:3000/memos/1"
         Alamofire.request(url, method:.get)
@@ -20,10 +26,18 @@ class SendFixedContentController: UIViewController {
         getMemo()
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        contentOneButton.layer.borderColor = UIColor.black.cgColor
+        contentOneButton.layer.borderWidth = 5.0
+        contentTwoButton.layer.borderColor = UIColor.black.cgColor
+        contentTwoButton.layer.borderWidth = 5.0
+        contentThreeButton.layer.borderColor = UIColor.black.cgColor
+        contentThreeButton.layer.borderWidth = 5.0
+        contentFourButton.layer.borderColor = UIColor.black.cgColor
+        contentFourButton.layer.borderWidth = 5.0
+        contentFiveButton.layer.borderColor = UIColor.black.cgColor
+        contentFiveButton.layer.borderWidth = 5.0
     }
     
     override func didReceiveMemoryWarning() {

@@ -89,36 +89,118 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDR-kD-DHD">
-                                <rect key="frame" x="172" y="121" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="1"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jps-nl-hoh" userLabel="BaseView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDR-kD-DHD" userLabel="FixedContent1">
+                                <rect key="frame" x="0.0" y="20" width="375" height="116.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="     Open for Studentsの時間です。" backgroundImage="open_for_students">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="sendRequstButton:" destination="iFn-3z-U0P" eventType="touchUpInside" id="Otl-Dr-ikh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plX-lg-17T">
-                                <rect key="frame" x="172" y="167" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="2"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plX-lg-17T" userLabel="FixedContent2">
+                                <rect key="frame" x="0.0" y="131.5" width="375" height="116.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="   Open for Studentsの時間ではありません。" backgroundImage="working">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBS-JJ-bio">
-                                <rect key="frame" x="168" y="270" width="40" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="BACK"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZQ-NW-Xao" userLabel="FixedContent3">
+                                <rect key="frame" x="0.0" y="243" width="375" height="116.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="   入室をご遠慮ください。" backgroundImage="dont_enter">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendRequstButton:" destination="iFn-3z-U0P" eventType="touchUpInside" id="gHL-kU-EaL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fe2-90-QpR" userLabel="FixedContent4">
+                                <rect key="frame" x="0.0" y="354.5" width="375" height="116.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="   宅配便の方へ：右の秘書室で受け取ります。" backgroundImage="delivery">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendRequstButton:" destination="iFn-3z-U0P" eventType="touchUpInside" id="opD-lC-ccQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7m-ZA-Whh" userLabel="FixedContent5">
+                                <rect key="frame" x="0.0" y="466" width="375" height="116.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="   講義中です。" backgroundImage="class">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendRequstButton:" destination="iFn-3z-U0P" eventType="touchUpInside" id="jBw-b3-GCB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBS-JJ-bio">
+                                <rect key="frame" x="0.0" y="582.5" width="375" height="84.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="0r4-eR-cfQ" kind="unwind" unwindAction="goBack:" id="LS0-eq-Zl0"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="plX-lg-17T" firstAttribute="top" secondItem="bDR-kD-DHD" secondAttribute="bottom" constant="-5" id="1Hk-uj-q6A"/>
+                            <constraint firstItem="VBS-JJ-bio" firstAttribute="leading" secondItem="4pA-WK-qqN" secondAttribute="leading" id="22b-kp-UR3"/>
+                            <constraint firstItem="4pA-WK-qqN" firstAttribute="bottom" secondItem="VBS-JJ-bio" secondAttribute="bottom" id="6GV-Mo-8Ux"/>
+                            <constraint firstItem="plX-lg-17T" firstAttribute="trailing" secondItem="4pA-WK-qqN" secondAttribute="trailing" id="90K-xq-4g2"/>
+                            <constraint firstItem="I7m-ZA-Whh" firstAttribute="height" secondItem="jps-nl-hoh" secondAttribute="height" multiplier="0.18" id="DVH-0r-4TH"/>
+                            <constraint firstItem="QZQ-NW-Xao" firstAttribute="width" secondItem="jps-nl-hoh" secondAttribute="width" id="ETQ-yh-F2n"/>
+                            <constraint firstItem="I7m-ZA-Whh" firstAttribute="top" secondItem="fe2-90-QpR" secondAttribute="bottom" constant="-5" id="Ep9-tc-ROu"/>
+                            <constraint firstItem="VBS-JJ-bio" firstAttribute="trailing" secondItem="4pA-WK-qqN" secondAttribute="trailing" id="F2c-lg-V95"/>
+                            <constraint firstItem="fe2-90-QpR" firstAttribute="trailing" secondItem="4pA-WK-qqN" secondAttribute="trailing" id="GgU-Xb-SD7"/>
+                            <constraint firstItem="bDR-kD-DHD" firstAttribute="width" secondItem="jps-nl-hoh" secondAttribute="width" id="H2S-KR-yZl"/>
+                            <constraint firstItem="I7m-ZA-Whh" firstAttribute="trailing" secondItem="4pA-WK-qqN" secondAttribute="trailing" id="IQe-Re-5HX"/>
+                            <constraint firstItem="QZQ-NW-Xao" firstAttribute="height" secondItem="jps-nl-hoh" secondAttribute="height" multiplier="0.18" id="KxH-LH-tmg"/>
+                            <constraint firstItem="jps-nl-hoh" firstAttribute="top" secondItem="4pA-WK-qqN" secondAttribute="top" id="L8p-zo-Q3J"/>
+                            <constraint firstItem="fe2-90-QpR" firstAttribute="height" secondItem="jps-nl-hoh" secondAttribute="height" multiplier="0.18" id="OfI-K0-5fq"/>
+                            <constraint firstItem="VBS-JJ-bio" firstAttribute="top" secondItem="I7m-ZA-Whh" secondAttribute="bottom" id="Oy9-CR-5V4"/>
+                            <constraint firstItem="bDR-kD-DHD" firstAttribute="leading" secondItem="4pA-WK-qqN" secondAttribute="leading" id="RO8-C2-x6y"/>
+                            <constraint firstItem="QZQ-NW-Xao" firstAttribute="trailing" secondItem="4pA-WK-qqN" secondAttribute="trailing" id="ZqC-cu-fDx"/>
+                            <constraint firstItem="fe2-90-QpR" firstAttribute="leading" secondItem="4pA-WK-qqN" secondAttribute="leading" id="atR-Li-wuM"/>
+                            <constraint firstItem="I7m-ZA-Whh" firstAttribute="width" secondItem="jps-nl-hoh" secondAttribute="width" id="bDQ-rk-s2m"/>
+                            <constraint firstItem="bDR-kD-DHD" firstAttribute="height" secondItem="jps-nl-hoh" secondAttribute="height" multiplier="0.18" id="bDk-LR-Api"/>
+                            <constraint firstItem="plX-lg-17T" firstAttribute="leading" secondItem="4pA-WK-qqN" secondAttribute="leading" id="dcg-DR-YcY"/>
+                            <constraint firstItem="bDR-kD-DHD" firstAttribute="trailing" secondItem="4pA-WK-qqN" secondAttribute="trailing" id="dzB-Rm-7ob"/>
+                            <constraint firstItem="QZQ-NW-Xao" firstAttribute="leading" secondItem="4pA-WK-qqN" secondAttribute="leading" id="ewv-z9-Q0d"/>
+                            <constraint firstItem="fe2-90-QpR" firstAttribute="top" secondItem="QZQ-NW-Xao" secondAttribute="bottom" constant="-5" id="fa5-sM-9oU"/>
+                            <constraint firstItem="4pA-WK-qqN" firstAttribute="trailing" secondItem="jps-nl-hoh" secondAttribute="trailing" id="lMw-rA-GfE"/>
+                            <constraint firstItem="fe2-90-QpR" firstAttribute="width" secondItem="jps-nl-hoh" secondAttribute="width" id="lj2-1X-wye"/>
+                            <constraint firstItem="jps-nl-hoh" firstAttribute="leading" secondItem="4pA-WK-qqN" secondAttribute="leading" id="mhF-ht-Bs4"/>
+                            <constraint firstItem="plX-lg-17T" firstAttribute="height" secondItem="jps-nl-hoh" secondAttribute="height" multiplier="0.18" id="ok6-dH-RUa"/>
+                            <constraint firstItem="I7m-ZA-Whh" firstAttribute="leading" secondItem="4pA-WK-qqN" secondAttribute="leading" id="q9l-h6-d7r"/>
+                            <constraint firstItem="jps-nl-hoh" firstAttribute="bottom" secondItem="4pA-WK-qqN" secondAttribute="bottom" id="r29-76-CpD"/>
+                            <constraint firstItem="bDR-kD-DHD" firstAttribute="top" secondItem="4pA-WK-qqN" secondAttribute="top" id="tBk-6t-dcS"/>
+                            <constraint firstItem="QZQ-NW-Xao" firstAttribute="top" secondItem="plX-lg-17T" secondAttribute="bottom" constant="-5" id="ulI-vu-FuT"/>
+                            <constraint firstItem="plX-lg-17T" firstAttribute="width" secondItem="jps-nl-hoh" secondAttribute="width" id="wa4-r3-GMJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4pA-WK-qqN"/>
                     </view>
+                    <connections>
+                        <outlet property="contentFiveButton" destination="I7m-ZA-Whh" id="d9v-bO-85F"/>
+                        <outlet property="contentFourButton" destination="fe2-90-QpR" id="s2p-Gv-dEj"/>
+                        <outlet property="contentOneButton" destination="bDR-kD-DHD" id="2nP-Va-Yef"/>
+                        <outlet property="contentThreeButton" destination="QZQ-NW-Xao" id="nxQ-8X-lBo"/>
+                        <outlet property="contentTwoButton" destination="plX-lg-17T" id="Rrq-w2-aWS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1BF-6q-aa3" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="0r4-eR-cfQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1065" y="-204"/>
+            <point key="canvasLocation" x="1064.8" y="-204.64767616191907"/>
         </scene>
         <!--New_phrase-->
         <scene sceneID="dcy-Gv-8pL">
@@ -148,8 +230,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="class" width="810" height="219"/>
         <image name="comment" width="800" height="800"/>
+        <image name="delivery" width="781" height="200"/>
+        <image name="dont_enter" width="781" height="200"/>
+        <image name="open_for_students" width="781" height="200"/>
         <image name="pencil" width="505" height="512"/>
+        <image name="working" width="781" height="200"/>
     </resources>
     <color key="tintColor" red="0.10100343222192565" green="0.61768638013504429" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
