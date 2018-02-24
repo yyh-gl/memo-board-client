@@ -93,6 +93,9 @@
                                 <rect key="frame" x="172" y="121" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="sendRequstButton:" destination="iFn-3z-U0P" eventType="touchUpInside" id="Otl-Dr-ikh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plX-lg-17T">
                                 <rect key="frame" x="172" y="167" width="30" height="30"/>

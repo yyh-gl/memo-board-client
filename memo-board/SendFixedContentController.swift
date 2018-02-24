@@ -7,8 +7,19 @@
 //
 
 import UIKit
+import Alamofire
 
 class SendFixedContentController: UIViewController {
+    
+    func getMemo() {
+        let url = "http://192.168.10.4:3000/memos/1"
+        Alamofire.request(url, method:.get)
+    }
+    
+    @IBAction func sendRequstButton(_ sender: Any) {
+        getMemo()
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +30,5 @@ class SendFixedContentController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
 }

@@ -1,0 +1,6 @@
+framework module Pods_memo_boardTests {
+  umbrella header "Pods-memo-boardTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
