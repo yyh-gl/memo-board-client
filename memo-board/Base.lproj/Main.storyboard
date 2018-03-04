@@ -14,7 +14,7 @@
         <!--Main-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Main" id="BYZ-38-t0r" customClass="MainController" customModule="memo_board" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainView" title="Main" id="BYZ-38-t0r" customClass="MainController" customModule="memo_board" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,10 +24,10 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8kQ-S6-Ejp" userLabel="背景">
                                         <rect key="frame" x="0.0" y="323" width="375" height="323.5"/>
-                                        <color key="backgroundColor" red="0.99494581840578322" green="1" blue="0.41727940673098241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ach-4h-Izv" userLabel="定型文">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="323.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="291"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                         <state key="normal" title="定型文" backgroundImage="comment">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -37,28 +37,39 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GP9-Em-TAq" userLabel="新規文">
-                                        <rect key="frame" x="0.0" y="323.5" width="375" height="323.5"/>
+                                        <rect key="frame" x="0.0" y="291" width="375" height="291"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                         <state key="normal" title="新規文" backgroundImage="pencil">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="goNewContentView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bgr-CT-xWg"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jl3-rI-eGK">
+                                        <rect key="frame" x="0.0" y="582" width="375" height="65"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                        <state key="normal" title="設定">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.10100343220000001" green="0.61768638009999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="GP9-Em-TAq" firstAttribute="height" secondItem="H00-qs-Str" secondAttribute="height" multiplier="0.5" id="2w5-MB-PWH"/>
+                                    <constraint firstItem="GP9-Em-TAq" firstAttribute="height" secondItem="H00-qs-Str" secondAttribute="height" multiplier="0.45" id="2w5-MB-PWH"/>
                                     <constraint firstItem="8kQ-S6-Ejp" firstAttribute="height" secondItem="H00-qs-Str" secondAttribute="height" multiplier="0.5" id="3Of-Ny-HyT"/>
                                     <constraint firstItem="Ach-4h-Izv" firstAttribute="leading" secondItem="H00-qs-Str" secondAttribute="leading" id="7ux-x6-Bk7"/>
                                     <constraint firstItem="8kQ-S6-Ejp" firstAttribute="leading" secondItem="H00-qs-Str" secondAttribute="leading" id="EHj-7M-rwH"/>
                                     <constraint firstItem="Ach-4h-Izv" firstAttribute="top" secondItem="H00-qs-Str" secondAttribute="top" id="FQk-F2-T2D"/>
-                                    <constraint firstAttribute="bottom" secondItem="GP9-Em-TAq" secondAttribute="bottom" id="QaR-X6-Zu5"/>
+                                    <constraint firstItem="GP9-Em-TAq" firstAttribute="top" secondItem="Ach-4h-Izv" secondAttribute="bottom" id="HHu-fu-ZeH"/>
                                     <constraint firstAttribute="trailing" secondItem="GP9-Em-TAq" secondAttribute="trailing" id="R92-FY-3xR"/>
                                     <constraint firstItem="8kQ-S6-Ejp" firstAttribute="width" secondItem="H00-qs-Str" secondAttribute="width" id="SYb-n4-Az6"/>
                                     <constraint firstItem="Ach-4h-Izv" firstAttribute="width" secondItem="H00-qs-Str" secondAttribute="width" id="bVA-s8-f55"/>
-                                    <constraint firstItem="Ach-4h-Izv" firstAttribute="height" secondItem="H00-qs-Str" secondAttribute="height" multiplier="0.5" id="j8s-g8-5cv"/>
+                                    <constraint firstAttribute="trailing" secondItem="jl3-rI-eGK" secondAttribute="trailing" id="gB2-Fu-Sel"/>
+                                    <constraint firstItem="jl3-rI-eGK" firstAttribute="top" secondItem="GP9-Em-TAq" secondAttribute="bottom" id="iNT-Qv-vAw"/>
+                                    <constraint firstAttribute="bottom" secondItem="jl3-rI-eGK" secondAttribute="bottom" id="ifk-iB-baG"/>
+                                    <constraint firstItem="Ach-4h-Izv" firstAttribute="height" secondItem="H00-qs-Str" secondAttribute="height" multiplier="0.45" id="j8s-g8-5cv"/>
+                                    <constraint firstItem="jl3-rI-eGK" firstAttribute="leading" secondItem="H00-qs-Str" secondAttribute="leading" id="k1T-Hz-cAP"/>
                                     <constraint firstItem="GP9-Em-TAq" firstAttribute="leading" secondItem="H00-qs-Str" secondAttribute="leading" id="lAk-W7-5dD"/>
                                     <constraint firstAttribute="trailing" secondItem="Ach-4h-Izv" secondAttribute="trailing" id="mhj-Od-MZj"/>
                                     <constraint firstAttribute="trailing" secondItem="8kQ-S6-Ejp" secondAttribute="trailing" id="n7c-vU-5Bm"/>
@@ -234,11 +245,11 @@
     </scenes>
     <resources>
         <image name="class" width="810" height="219"/>
-        <image name="comment" width="800" height="800"/>
+        <image name="comment" width="1458" height="1458"/>
         <image name="delivery" width="781" height="200"/>
         <image name="dont_enter" width="781" height="200"/>
         <image name="open_for_students" width="781" height="200"/>
-        <image name="pencil" width="505" height="512"/>
+        <image name="pencil" width="1458" height="1458"/>
         <image name="working" width="781" height="200"/>
     </resources>
     <color key="tintColor" red="0.10100343222192565" green="0.61768638013504429" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
